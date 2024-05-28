@@ -4,6 +4,6 @@ Machine learning engine to identify the species of a penguin based on available 
 
 ## Data Preparation:
 
-Before the data could be used, cleaning was required. The different values stored for each entry were the penguin's species, island, culmen_length (mm), culmen_depth (mm), flipper_length (mm), body_mass (mm), and sex. For some entries, the data contained several null attributes. Entries with multiple (two or more) null values were removed; these values were removed using R. The R script has been included for reference. Some entries only included one null attribute. This was accepted as missing one attribute (such as sex) is not essential for determining the penguin's species.
+Before the data could be used, cleaning was required. The different values stored for each entry were the penguin's species, island, culmen_length (mm), culmen_depth (mm), flipper_length (mm), body_mass (mm), and sex. For some entries, the data contained several null attributes. Entries with multiple (two or more) null values were removed; these values were removed using R. The R script has been included for reference. Some entries only included one null attribute. This was accepted as missing one attribute (such as sex) is not essential for determining the penguin's species. The original dataset (Penguin_Data.csv) and the resulting dataset (cleaned_data.csv) are also both included for reference. The presence of the original dataset in conjunciton with the R script allow for the data to be more/less modified to retrain and retest the model.
 
 
