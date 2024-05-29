@@ -32,11 +32,11 @@ contingency_table = pd.crosstab(df['species'], df['island'])
 chi2, p, dof, expected = chi2_contingency(contingency_table)
 
 # Output the results
--
-print(f"Chi-square statistic: {chi2}")
-print(f"P-value: {p}")
-print(f"Degrees of freedom: {dof}")
-print(f"Expected frequencies:\n {expected}")
+----------------------
+  print(f"Chi-square statistic: {chi2}")
+  print(f"P-value: {p}")
+  print(f"Degrees of freedom: {dof}")
+  print(f"Expected frequencies:\n {expected}")
 ----------------------
 Due to the variance in medians and low p-value, the islands are statistically significant and should remain. In order to use this categorical data in KNN, it must be converted into a numerical metric. Due to the nature of KNN and "closeness", the islands cannot be assigned unique integers. Instead, they must become represented through one-hot encoding. 
 
