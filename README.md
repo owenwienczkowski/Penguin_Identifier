@@ -32,6 +32,7 @@ contingency_table = pd.crosstab(df['species'], df['island'])
 chi2, p, dof, expected = chi2_contingency(contingency_table)
 
 # Output the results
+
 print(f"Chi-square statistic: {chi2}")
 print(f"P-value: {p}")
 print(f"Degrees of freedom: {dof}")
